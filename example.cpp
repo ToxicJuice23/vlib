@@ -7,5 +7,12 @@ int main(int argc, char** argv) {
 	Vvector_bool* v4 = new Vvector_bool({true, false, NULL, 0, 1});
 	Vvector_string* v5 = new Vvector_string({"Example index 1", "Example 2", "Index 3"});
 	Vvector_char* v6 = new Vvector_char({'a', 'f', '4', ':'});
+	
+	v1->Vprint_values();
+	v2->Vprint_values();
+	v3->Vprint_values();
+	v4->Vprint_values();
+	v5->Vprint_values();
+	v6->Vprint_values();
 	return 0;
 }
