@@ -2,11 +2,12 @@
 
 ## Installation
 
-Step one: Download source code using git clone
-Step two: Add `vlib` folder to your project
-Step three: Add -I/path/to/vlib to your g++ command
-Step four: `#include <vlib/vlib.hpp>`
-Step five: Enjoy the library ;)
+Step one: Download source code using git clone  
+Step two: Add `vlib` folder to your project  
+Step three: Add -I/path/to/vlib to your g++ command  
+Step four: `#include <vlib.hpp>`  
+Step five: Enjoy the library ;)  
+
 ## Usage
 
 ### Initialization of Vvector object
