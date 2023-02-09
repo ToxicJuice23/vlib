@@ -1,4 +1,4 @@
-# VLib Alpha v1.0
+# VLib Beta 1.0
 
 ## Installation
 
