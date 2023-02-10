@@ -9,6 +9,14 @@ class Vvector_bool;
 class Vvector_string;
 class Vvector_char;
 
+class Vvector2d_int;
+class Vvector2d_float;
+class Vvector2d_double;
+class Vvector2d_bool;
+class Vvector2d_string;
+class Vvector2d_char;
+
+
 class Vvector_int {
 public:
 	void Vpop(int index); 
@@ -194,6 +202,13 @@ public:
 	int Vsize();  
 	char Vget_item(int index); 
 	int Vfind(char item); 
+	string Vto_string() {
+		string final_;
+		for (char x : vector_) {
+			final_ = final_ + x;
+		}
+		return final_;
+	}
 	bool Vnext() {
 		if (at_index >= vector_.size() - 1) {
 			return false;

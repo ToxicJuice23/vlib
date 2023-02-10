@@ -53,5 +53,5 @@ char Vvector_char::Vget_item(int index) {
 			return vector_[x];
 		}
 	}
-	return NULL;
+	return char(0);
 }
