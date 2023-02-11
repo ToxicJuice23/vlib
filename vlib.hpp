@@ -39,6 +39,7 @@ public:
 		return vector_[at_index];
 	}
 	bool Vcompare(Vvector_int* v);
+	Vvector_int* Vsort(string method="asc");
 	vector<int> Vget_vector() {
 		return vector_;
 	}
@@ -244,5 +245,7 @@ private:
 #include "compare.hpp"
 #include "get_item.hpp"
 #include "find.hpp"
+#include "sort.hpp"
 // 2d Vvector
-// to string for char and string Vvectors
+// sort for integers n other types as well
+// max min mid
