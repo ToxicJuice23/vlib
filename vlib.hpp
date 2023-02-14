@@ -75,6 +75,7 @@ public:
 		return vector_[at_index];
 	}
 	bool Vcompare(Vvector_float* v);
+	Vvector_float* Vsort(string method="asc");
 	vector<float> Vget_vector() {
 		return vector_;
 	}
@@ -110,6 +111,7 @@ public:
 		return vector_[at_index];
 	}
 	bool Vcompare(Vvector_double* v);
+	Vvector_double* Vsort(string method="asc");
 	vector<double> Vget_vector() {
 		return vector_;
 	}
@@ -180,6 +182,7 @@ public:
 		return vector_[at_index];
 	}
 	bool Vcompare(Vvector_string* v);
+	Vvector_string* Vsort(string method="asc");
 	vector<string> Vget_vector() {
 		return vector_;
 	}
@@ -222,6 +225,7 @@ public:
 		return vector_[at_index];
 	}
 	bool Vcompare(Vvector_char* v);
+	Vvector_char* Vsort(string method="asc");
 	vector<char> Vget_vector() {
 		return vector_;
 	}

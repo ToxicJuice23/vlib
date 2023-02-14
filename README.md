@@ -40,9 +40,10 @@ Also, the number: function is used to identify functions in the documentation. Y
 8: `vector<type> Vvector_type::Vget_vector()`  
 9: `Vvector_type::Vvector_type(vector<type> v={})`  
 10: `int VVector_type::Vfind(int item)`  
-11: `bool Vvector_type::next()`  
-12: `type Vvector_type::at()`  
+11: `bool Vvector_type::Vnext()`  
+12: `type Vvector_type::Vat()`  
 13: `bool Vvector_type::Vcompare(Vvector_type* v)`  
+14: `Vvector_type* Vvector_type::Vsort(string method="asc")`  
 
 ## What the methods do
 
@@ -59,5 +60,6 @@ Also, the number: function is used to identify functions in the documentation. Y
 11: increments the current index which can be accessed with at  
 12: accesses the value at the current index, incremented with next()  
 13: returns true if v is equal to the current Vvector. Only compares up to the length of the current Vvector  
+14: returns a Vvector ordered by either ascending or descending values  
 
 ## Errors coming soon
