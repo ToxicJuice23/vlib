@@ -168,7 +168,7 @@ Vvector_string* Vvector_string::Vsort(string method) {
 		vector<string> final_;
 		// max until done
 		while (start.size() > 0) {
-			int biggest = -1;
+			int biggest = 0;
 			string biggest_item;
 			int biggest_index = 0;
 			int index = 0;

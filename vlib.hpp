@@ -239,11 +239,20 @@ private:
 	int at_index = 0;
 };
 
+struct Vlib {
+	static Vvector_int* Vparse_str_to_int(string str, char separator);
+	static Vvector_float* Vparse_str_to_float(string str, char separator);
+	static Vvector_double* Vparse_str_to_double(string str, char separator);
+	static Vvector_bool* Vparse_str_to_bool(string str, char separator);
+	static Vvector_string* Vparse_str_to_string(string str, char separator);
+	static Vvector_char* Vparse_str_to_char(string str, char separator);
+};
+
 #include "pop.hpp"
 #include "push.hpp"
 #include "print_values.hpp"
 #include "reverse.hpp"
-#include "seperate_str.hpp" //
+#include "parse_str.hpp"
 #include "set_vector.hpp"
 #include "size.hpp"
 #include "compare.hpp"
@@ -251,5 +260,5 @@ private:
 #include "find.hpp"
 #include "sort.hpp"
 // 2d Vvector
-// sort for integers n other types as well
 // max min mid
+// sum

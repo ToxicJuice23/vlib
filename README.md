@@ -44,6 +44,8 @@ Also, the number: function is used to identify functions in the documentation. Y
 12: `type Vvector_type::Vat()`  
 13: `bool Vvector_type::Vcompare(Vvector_type* v)`  
 14: `Vvector_type* Vvector_type::Vsort(string method="asc")`  
+15: `std::string Vvector_type::Vto_string()`  
+16: `Vvector_type* Vlib::Vparse_str_to_type(string str, char separator)`
 
 ## What the methods do
 
@@ -61,5 +63,7 @@ Also, the number: function is used to identify functions in the documentation. Y
 12: accesses the value at the current index, incremented with next()  
 13: returns true if v is equal to the current Vvector. Only compares up to the length of the current Vvector  
 14: returns a Vvector ordered by either ascending or descending values  
+15: concatenates the Vvector values of a Vvector_string or Vvector_char  
+16: parses a string to return a Vvector of that wanted type  
 
 ## Errors coming soon
