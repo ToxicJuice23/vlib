@@ -26,7 +26,8 @@ public:
 	void Vset_vector(vector<int> v); 
 	int Vsize();  
 	int Vget_item(int index); 
-	int Vfind(int item); 
+	int Vfind(int item);
+	int Vmax();
 	bool Vnext() {
 		if (at_index >= vector_.size() - 1) {
 			return false;
@@ -63,6 +64,7 @@ public:
 	int Vsize();  
 	float Vget_item(int index); 
 	int Vfind(float item); 
+	float Vmax();
 	bool Vnext() {
 		if (at_index >= vector_.size() - 1) {
 			return false;
@@ -99,6 +101,7 @@ public:
 	int Vsize();  
 	double Vget_item(int index); 
 	int Vfind(double item); 
+	double Vmax();
 	bool Vnext() {
 		if (at_index >= vector_.size() - 1) {
 			return false;
@@ -170,6 +173,7 @@ public:
 	int Vsize();  
 	string Vget_item(int index); 
 	int Vfind(string item); 
+	string Vmax(); // longest string
 	bool Vnext() {
 		if (at_index >= vector_.size() - 1) {
 			return false;
@@ -213,6 +217,7 @@ public:
 		}
 		return final_;
 	}
+	char Vmax();
 	bool Vnext() {
 		if (at_index >= vector_.size() - 1) {
 			return false;
@@ -259,6 +264,11 @@ struct Vlib {
 #include "get_item.hpp"
 #include "find.hpp"
 #include "sort.hpp"
+#include "max.hpp"
+#include "min.hpp"
+#include "average.hpp"
+#include "sum.hpp"
 // 2d Vvector
 // max min mid
 // sum
+// pushback and pop back
